@@ -553,6 +553,12 @@ function Swipe(container, options) {
 
       }
 
+    },
+    begin: function() {
+
+      // Start slideshow
+      begin();
+
     }
   }
 
