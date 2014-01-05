@@ -502,6 +502,13 @@ function Swipe(container, options) {
       stop();
 
     },
+    begin: function() {
+
+      // start slideshow
+      delay = options.auto || 0;
+      begin();
+
+    },
     getPos: function() {
 
       // return current index position
@@ -552,12 +559,6 @@ function Swipe(container, options) {
         window.onresize = null;
 
       }
-
-    },
-    begin: function() {
-
-      // Start slideshow
-      begin();
 
     }
   }
